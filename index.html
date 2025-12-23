@@ -13,7 +13,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            cursor: pointer;
         }
 
         .wrapper {
@@ -22,7 +21,7 @@
         }
 
         img {
-            max-width: 100%;
+            max-width: 70%;
             height: auto;
             border-radius: 6px;
             transition: transform 0.3s ease;
@@ -33,19 +32,37 @@
         }
 
         .plav {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            width: 100%;
+        }
+
+        .plav a {
             margin-top: 12px;
-            font-size: 22px;
-            letter-spacing: 4px;
-            color: #555;
-            font-family: Arial, sans-serif;
+            font-size: 30px;
+            color: #005f00;
+            background-color: #bebebe;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            border: 2px solid #005f00;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        .plav a:hover {
+            color: #00a800;
         }
     </style>
 </head>
 
-<body onclick="window.location.href='https://www.epydemye.cz/'">
+<body>
     <div class="wrapper">
-        <img src="tricko.jpg.jpg" alt="plavání s velbloudy">
-        <div class="plav">plav</div>
+        <img src="tricko.jpg" alt="plavání s velbloudy">
+        <div class="plav">
+            <a href="https://www.epydemye.cz/"><b>JDEME PLAVAT</b></a>
+            <a href="https://www.epydemye.cz/events/next/2025"><b>VOLNÉ TERMÍNY</b></a>
+        </div>
     </div>
 </body>
 </html>
